@@ -5,7 +5,9 @@
 }
 
 .container {
-  margin: auto;
+  width: 100%;
+  border: 0.1vw solid black;
+  overflow: hidden;
 }
 
 .navbar {
@@ -16,15 +18,15 @@
 }
 .navbar i {
   padding: 0 2vw;
-  /* font-size: vw; */
 }
 
 /* ====================== UserItem.js ================ */
 .card {
   padding: 1vw;
-  /* width: 12vw; */
-  border: 0.1vw solid black;
   text-align: center;
+}
+.avatarConatiner {
+  height: 100%;
 }
 .card .avatarImg {
   width: 50%;
@@ -52,7 +54,7 @@
 
 .userContainer {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 3vw 5vw;
   grid-gap: 3vw;
 }
@@ -84,10 +86,58 @@ input:focus {
   background-color: black;
   color: white;
   font-weight: 700;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .search input[type="submit"]:hover {
   background-color: white;
   color: black;
+}
+
+@media (max-width: 769px) {
+  .userContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .userDetails h3 {
+    font-size: 2vw;
+  }
+  .moreBtn{
+    font-size: 1.8vw;
+  }
+}
+
+@media(max-width: 650px){
+  .search input[type="text"] {
+    font-size: 2.5vw;
+  }
+  .search input[type="submit"] {
+    font-size: 2.5vw;
+  }
+  .navbar {
+    font-size: 4vw;
+  }
+}
+
+@media(max-width: 426px){
+  .userContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .userDetails h3 {
+    font-size: 3vw;
+  }
+  .moreBtn{
+    font-size: 2.5vw;
+  }
+}
+
+@media(max-width: 376px){
+  .userContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .userDetails h3 {
+    font-size: 4vw;
+  }
+  .moreBtn{
+    font-size: 3vw;
+  }
 }
