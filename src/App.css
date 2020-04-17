@@ -10,15 +10,36 @@
   overflow: hidden;
 }
 
+/* ====================== Navbar.js ================ */
+
 .navbar {
   background-color: black;
   color: white;
   padding: 1vw 4vw;
   font-size: 2vw;
+  display: grid;
+  grid-template-columns: 6fr 2fr;
 }
 .navbar i {
   padding: 0 2vw;
 }
+
+.navbar .hrefOptions span a {
+  margin: 0 2vw;
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .hrefOptions span a:hover {
+  color: rgb(202, 202, 202);
+}
+
+
+
+
+
+
 
 /* ====================== UserItem.js ================ */
 .card {
@@ -121,18 +142,24 @@ input:focus {
 /* ====================== Alert.js ================ */
 
 .alert {
-  width: 30%;
+  width: 80%;
   padding: 5vw 0;
   margin: auto;
 }
 
 .alertMsg{
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .alertMsg i {
   color: red;
+}
+
+/* ====================== About.js ================ */
+
+.aboutContainer {
+  padding: 3vw 5vw;
 }
 
 /* ====================== RESPONSIVENESS ================ */
